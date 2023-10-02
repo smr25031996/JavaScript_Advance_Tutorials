@@ -1,0 +1,36 @@
+.para {
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+
+}
+
+button {
+    padding: 10px;
+}
+
+.red {
+    color: red;
+    background-color: black;
+}
+
+.blue {
+    color: blue;
+    background-color: bisque;
+}
+
+.green {
+    color: green;
+    background-color: brown;
+}
+
+.brown {
+    color: brown;
+    background-color: cadetblue;
+}
+
