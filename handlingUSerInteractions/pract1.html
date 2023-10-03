@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form action="" class="form-group">
+            <div>
+                <label for="firstName">FirstName</label>
+                <input type="text" name="" id="firstName" class="form-control">
+            </div>
+            <button type="submit" class="but">Submit</button>
+            <div>
+                <h1 id="output"></h1>
+            </div>
+        </form>
+    </section>
+    <script>
+        const formgrp=document.querySelector('form');
+        const firstName=document.getElementById('firstName');
+        const output=document.getElementById('output');
+        const buttonn=document.querySelector('button');
+        buttonn.addEventListener('click',($event)=>{
+            event.preventDefault()
+            console.log(firstName.value)
+            output.textContent=firstName.value
+            formgrp.reset()
+
+
+        })
+    </script>
+
+</body>
+</html>
