@@ -9,7 +9,7 @@ const email = document.querySelector("#email");
 const myForm = document.querySelector("form");
 
 button.addEventListener("click", ($event) => {
-  event.preventDefault();
+  $event.preventDefault();
   //   output.textContent = firstName.value + " " + lastname.value;
   //   output.textContent = email.value;
   const fullName = document.createElement("h4");
