@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Changing colors</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+      integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <h1 id="page-title" class="text-center w-100">Take A Note !</h1>
+      </header>
+
+      <div class="row mt-4">
+        <main class="col-sm-10 offset-sm-1 list-group">
+          <form>
+            <div class="form-group">
+              <label for="note-title">Title</label>
+              <input
+                type="text"
+                id="note-title"
+                class="form-control"
+                required
+              />
+              <small
+                style="display: none"
+                id="error-title"
+                class="text-danger"
+                >Note Should have title</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="note-content">Descrpition</label>
+              <input
+                type="text"
+                id="note-content"
+                class="form-control"
+                required
+              />
+              <small
+                style="display: none"
+                id="error-content"
+                class="text-danger"
+                >Please enter Descrpition</small
+              >
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-10 offset-sm-1 text-right">
+                <button class="btn btn-secondary" id="add-post" type="submit" disabled="true">
+                  ADD POST
+                </button>
+              </div>
+            </div>
+          </form>
+        </main>
+      </div>
+
+      <main class="row mt-4">
+        <section class="col-sm-10 offset-sm-1 list-group">
+          <article class="list-group-item">
+            <h5>A Blog Post</h5>
+            <p>
+              Hide at bottom of staircase to trip human. Ask for petting. Roll
+              on the floor purring your whiskers off. Trip on catnip nap all
+              day, eat too much then proceed to regurgitate all over living room
+              carpet while humans eat dinner nya nya nyan. Attack the child
+              groom yourself 4 hours - checked, have your beauty sleep 18 hours
+              - checked, be fabulous for the rest of the day - checked playing
+              with balls of wool.
+            </p>
+            <div class="col-sm-10 offset-sm-1 text-right float-right">
+              <button class="btn btn-secondary" id="remove-post">
+                Remove Post
+              </button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
